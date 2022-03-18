@@ -1,0 +1,92 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local titre = Instance.new("TextLabel")
+local credi = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
+local GUI = Instance.new("TextButton")
+local GUI_Roundify_12px = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.0182215851, 0, 0.018587362, 0)
+main.Size = UDim2.new(0, 272, 0, 561)
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(85, 85, 127)
+main.ImageTransparency = 0.100
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+main.Active = true
+main.Draggable = true
+
+titre.Name = "titre"
+titre.Parent = main
+titre.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+titre.BackgroundTransparency = 1.000
+titre.Size = UDim2.new(0, 272, 0, 50)
+titre.Font = Enum.Font.SciFi
+titre.Text = "D-DAY"
+titre.TextColor3 = Color3.fromRGB(0, 0, 0)
+titre.TextScaled = true
+titre.TextSize = 14.000
+titre.TextWrapped = true
+
+credi.Name = "credi"
+credi.Parent = main
+credi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credi.BackgroundTransparency = 1.000
+credi.Position = UDim2.new(0.242647052, 0, 0.939393938, 0)
+credi.Size = UDim2.new(0, 200, 0, 25)
+credi.Font = Enum.Font.SciFi
+credi.Text = "BY Gribouff"
+credi.TextColor3 = Color3.fromRGB(255, 255, 255)
+credi.TextSize = 14.000
+
+Frame.Name = "Frame"
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.095588237, 0, 0.28342247, 0)
+Frame.Size = UDim2.new(0, 214, 0, 349)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(103, 105, 148)
+Frame.ImageTransparency = 0.100
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+GUI.Name = "GUI"
+GUI.Parent = Frame
+GUI.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+GUI.BackgroundTransparency = 1.000
+GUI.BorderSizePixel = 0
+GUI.Position = UDim2.new(0.186915874, 0, 0.292263597, 0)
+GUI.Size = UDim2.new(0, 129, 0, 121)
+GUI.Font = Enum.Font.SourceSans
+GUI.Text = ""
+GUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUI.TextSize = 14.000
+GUI.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/glof2/ddaydestroyer/main/cheat.lua"))()
+end)
+
+GUI_Roundify_12px.Name = "GUI_Roundify_12px"
+GUI_Roundify_12px.Parent = GUI
+GUI_Roundify_12px.Active = true
+GUI_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+GUI_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUI_Roundify_12px.BackgroundTransparency = 1.000
+GUI_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+GUI_Roundify_12px.Selectable = true
+GUI_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+GUI_Roundify_12px.Image = "rbxassetid://3570695787"
+GUI_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 0, 0)
+GUI_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+GUI_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+GUI_Roundify_12px.SliceScale = 0.120
